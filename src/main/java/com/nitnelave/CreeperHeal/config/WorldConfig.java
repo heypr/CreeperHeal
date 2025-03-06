@@ -248,7 +248,7 @@ public class WorldConfig
                 {
                 case CREEPER:
                     return getBool(WCfgVal.CREEPERS) && isAbove(entity.getLocation());
-                case PRIMED_TNT:
+                case TNT:
                     return getBool(WCfgVal.TNT) && isAbove(entity.getLocation());
                 case FIREBALL:
                     return getBool(WCfgVal.GHAST) && isAbove(entity.getLocation());
@@ -257,9 +257,9 @@ public class WorldConfig
                 case WITHER:
                 case WITHER_SKULL:
                     return getBool(WCfgVal.WITHER);
-                case MINECART_TNT:
+                case TNT_MINECART:
                     return getBool(WCfgVal.MINECART_TNT);
-                case ENDER_CRYSTAL:
+                case END_CRYSTAL:
                     return getBool(WCfgVal.ENDER_CRYSTAL);
                 default:
                     return getBool(WCfgVal.CUSTOM);
